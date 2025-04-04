@@ -7,8 +7,12 @@ platforms = ["linux-64", "osx-arm64", "win-64"]
 version = "0.1.0"
 
 [tasks]
+101_kaggle_data = { cmd = "python fetch_online.py", cwd = "../dataset"}
 
 [dependencies]
 python = ">=3.13.2,<3.14"
 pip = ">=25.0.1,<26"
 requests = ">=2.32.3,<3"
+numpy = ">=2.2.4,<3"
+pandas = ">=2.2.3,<3"
+kagglehub = ">=0.3.8,<0.4"
