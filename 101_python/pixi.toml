@@ -8,6 +8,7 @@ version = "0.1.0"
 
 [tasks]
 101_kaggle_data = { cmd = "python fetch_online.py", cwd = "../dataset"}
+dashboard = { cmd = "jupyter notebook simple_stock_price_analyse_dashboard.ipynb", cwd = "../dashboard" }
 
 [dependencies]
 python = ">=3.13.2,<3.14"
