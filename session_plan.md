@@ -43,10 +43,7 @@ By the end of this session, participants will be able to:
      import pandas as pd
 
      def fetch_stock_data():
-         kaggle.api.dataset_download_files(
-             'twlo-stock-data',
-             path='./dataset',
-             unzip=True
+        ....
          )
          print("Data downloaded successfully!")
      ```
@@ -70,13 +67,12 @@ By the end of this session, participants will be able to:
 
      # Sample data
      data = {'date': ['2025-01-01', '2025-01-02'], 'close': [150, 155]}
-     source = ColumnDataSource(data)
+     ...
 
      # Create figure
-     p = figure(title="TWLO Stock Prices", x_axis_label='Date', y_axis_label='Price', x_axis_type='datetime')
-     p.line(x='date', y='close', source=source, line_width=2)
-
-     show(p)
+     p = figure(title="TWLO Stock Prices", x_axis_label='Date', y_axis_label='Price', 
+     ...
+     
      ```
      - Hands-on: Customize the chart with additional features (e.g., tooltips, legends).
 
